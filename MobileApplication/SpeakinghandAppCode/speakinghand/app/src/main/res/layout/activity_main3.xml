@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.SpeakingHand.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:title="Bluetooth Connection"
+            app:popupTheme="@style/Theme.SpeakingHand.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/searchDevices"
+        android:clickable="true"
+        android:layout_width="220dp"
+        android:layout_height="75dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Check Paired device"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:neumorph_shapeType="basin" />
+
+
+    <TextView
+        android:id="@+id/btDevicesText"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Bluetooth devices:"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/btDevices"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text=""
+        android:textSize="16sp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/connectToDevice"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Perform Sign"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:neumorph_shapeType="basin"/>
+
+
+    <TextView
+        android:id="@+id/btReadingsText"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Sensor Values:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btReadings"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textIsSelectable="true"
+                android:text=""
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/predictFragment"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:text="Predict"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:neumorph_shapeType="basin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/result"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="23dp"
+            android:text="Result: "
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/speakButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/_402426_audio_level_sound_volume_multimedia_icon"
+            app:neumorph_shapeType="pressed" />
+
+    </RelativeLayout>
+
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/refresh"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="Clear"
+        android:textSize="18sp"
+        app:neumorph_shapeType="basin"
+
+        />
+</LinearLayout>

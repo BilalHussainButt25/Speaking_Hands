@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "350484214728",
+    "project_id": "speaking-hand-bcb2a",
+    "storage_bucket": "speaking-hand-bcb2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350484214728:android:7199155abba75464f1c6fd",
+        "android_client_info": {
+          "package_name": "com.example.speakinghand"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZkfhpKuhNJiNlMS17Syh6sUimP3c6Hec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

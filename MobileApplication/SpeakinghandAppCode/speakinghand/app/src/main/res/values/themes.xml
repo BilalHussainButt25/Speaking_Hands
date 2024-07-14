@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Theme.SpeakingHand" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Disable the Action Bar -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Disable the title bar -->
+        <item name="windowNoTitle">true</item>
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <!-- Darker variant of the primary brand color -->
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <!-- Color for text and icons on the primary color -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/black</item>
+        <!-- Darker variant of the secondary brand color -->
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <!-- Color for text and icons on the secondary color -->
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- Ensure your activity content is not displayed under the status bar -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- Customize your theme here -->
+    </style>
+
+
+    <!-- Theme without Action Bar -->
+    <style name="Theme.SpeakingHand.NoActionBar"></style>
+
+    <!-- AppBar Overlay Theme -->
+    <style name="Theme.SpeakingHand.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Primary color for AppBar -->
+        <item name="colorPrimary">@color/black</item>
+    </style>
+
+    <!-- Popup Overlay Theme -->
+    <style name="Theme.SpeakingHand.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Base Theme for Speaking Hand -->
+    <style name="Base.Theme.SpeakingHand" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="CustomEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+
+</resources>

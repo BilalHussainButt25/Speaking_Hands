@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Needed only if your app looks for Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" /> <!-- Needed only if your app makes the device discoverable to Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" /> <!-- Needed only if your app communicates with already-paired Bluetooth devices. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Permission for internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SpeakingHand"
+        tools:targetApi="31">
+
+        <!-- MainActivity4 Declaration -->
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/Theme.SpeakingHand" /> <!-- MainActivity3 Declaration -->
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/Theme.SpeakingHand" /> <!-- MainActivity Declaration -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SpeakingHand" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.SpeakingHand">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

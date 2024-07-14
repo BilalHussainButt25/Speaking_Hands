@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <soup.neumorphism.NeumorphTextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Speaking Hand!"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="@font/font1"
+    android:layout_marginTop="16dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/bottomButton"
+    app:layout_constraintVertical_bias="0.1" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+    </FrameLayout>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/bottomButton"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:gravity="center"
+        android:text="Predict Sign"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327"
+        app:neumorph_shapeType="basin" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/dictionary"
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Dictionary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/fragment_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomButton"
+        app:layout_constraintVertical_bias="0.054"
+        app:neumorph_shapeType="basin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

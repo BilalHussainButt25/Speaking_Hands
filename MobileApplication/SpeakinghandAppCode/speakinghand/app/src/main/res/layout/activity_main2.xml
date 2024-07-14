@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="220dp"
+        android:layout_height="270dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/logoImageView"
+        android:layout_alignEnd="@id/logoImageView"
+        android:layout_marginEnd="-13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:text="SPEAKING HAND"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/titleTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/logoImageView"
+        android:layout_alignEnd="@id/logoImageView"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="cursive"
+        android:text="Pakistan Sign Language App"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/logoImageView"
+        android:layout_alignEnd="@id/logoImageView"
+        android:layout_below="@id/logoImageView"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="84dp" />
+</RelativeLayout>
